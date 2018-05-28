@@ -40,6 +40,9 @@ class Team
   def add_player(player)
     @players.push(player)
   end
-  
+
+  def player_check(player)
+    @players.include?(player)
+  end
 
 end

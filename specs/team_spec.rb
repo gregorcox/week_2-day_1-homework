@@ -29,6 +29,12 @@ class TeamTest < MiniTest::Test
     assert_equal(["Salah", "Firmino", "Mane", "Henderson", "Robertson", "Lovren"], team.add_player("Lovren"))
   end
 
+  def test_player_check
+    team = Team.new("Liverpool", ["Salah", "Firmino", "Mane", "Henderson", "Robertson"], "Klopp")
+    assert_equal(true, team.player_check("Salah"))
+  end
+  
+
 
 
 
