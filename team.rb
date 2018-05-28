@@ -37,4 +37,9 @@ class Team
   #   @coach = new_coach
   # end
 
+  def add_player(player)
+    @players.push(player)
+  end
+  
+
 end
