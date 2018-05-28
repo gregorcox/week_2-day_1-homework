@@ -25,5 +25,11 @@ class StudentTest < MiniTest::Test
     assert_equal("E10", student.cohort())
   end
 
+  def test_talk
+    student = Student.new("Greg", "E22")
+    student.talk()
+    assert_equal("I can't talk", student.talk())
+  end
+
 
 end
